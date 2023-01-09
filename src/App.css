@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: 'Acme' , sans-serif;
+    background: hsl(212, 96%, 38%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#quote-box{
+    background: white;
+    width: 40rem;
+    margin: 10rem auto;
+    padding: 2.6rem;
+    border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#text{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+#author{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+width: 2rem;
+}
+
+a{
+    margin-right: .5rem;
+    padding: .3rem, .5rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+a:hover{
+    opacity: .9;
+}
+
+#new-quote{
+    background: hsl(200, 90%, 43%);
+    border: none;
+    color: azure;
+    padding: .7rem 1rem;
+    font-size: .9rem;
+    font-weight: bold;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    
+}
+
+#new-quote:hover{
+    opacity: .8;
 }
